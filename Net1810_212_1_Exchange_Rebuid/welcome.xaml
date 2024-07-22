@@ -1,0 +1,14 @@
+﻿<Window x:Class="Exchange.WpfApp.welcome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exchange.WpfApp"
+        mc:Ignorable="d"
+        Title="welcome" Height="250" Width="500">
+    <Grid Height="225" VerticalAlignment="Top">
+        <Button Content="người dùng 1" HorizontalAlignment="Left" Margin="89,0,0,0" VerticalAlignment="Center" Click="userLogin1"/>
+        <Button Content="Người dùng 2" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Center" Click="userLogin2"/>
+
+    </Grid>
+</Window>

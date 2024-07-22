@@ -1,0 +1,81 @@
+﻿<Window x:Class="Exchange.WpfApp.SmallUI.SelectUserHave"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exchange.WpfApp.SmallUI"
+        mc:Ignorable="d"
+        Title="SelectUserHaveSmallUI" Height="580" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <StackPanel Orientation="Vertical" Loaded="Product_Loaded">
+            <GroupBox Header="Thông tin sản phẩm trao đỏi&#xD;&#xA;" Margin="10">
+                <Grid Height="100">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Existing Row -->
+                    <Label Grid.Column="0" Grid.Row="0" Content="UserWantID" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBox Grid.Column="1" Grid.Row="0" x:Name="txt_userWantID" Height="25" Margin="0,13,0,12" Width="140" HorizontalAlignment="Center" IsReadOnly="True" />
+                    <Label Grid.Column="2" Grid.Row="0" Content="Name" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBox Grid.Row="0" Grid.Column="3" x:Name="ProductName" Height="25" Margin="5,13,0,12" Width="145" HorizontalAlignment="Left" IsReadOnly="True" />
+                    <Label Grid.Column="4" Grid.Row="0" Content="Quantity" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBox Grid.Column="5" Grid.Row="0" x:Name="txtQuantity" Height="25" Margin="5,13,0,12" Width="159" HorizontalAlignment="Left" IsReadOnly="True" />
+
+
+                    <!-- New Row -->
+                    <Label Grid.Column="0" Grid.Row="1" Content="Description" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBox Grid.Column="1" Grid.Row="1" x:Name="txtDes" Height="25" Margin="0,13,0,12" Width="140" HorizontalAlignment="Center" IsReadOnly="True" />
+                    <Label Grid.Column="2" Grid.Row="1" Content="Note" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBox Grid.Row="1" Grid.Column="3" x:Name="txtNote" Height="25" Margin="5,13,0,12" Width="145" HorizontalAlignment="Left" IsReadOnly="True" />
+                    <Label x:Name="CreateDate" Grid.Column="4" Grid.Row="1" Content="Create Date" HorizontalAlignment="Left" VerticalContentAlignment="Center" />
+                    <TextBox Grid.Column="5" Grid.Row="1" x:Name="txtCreateDate" Height="25" Margin="5,13,0,12" Width="159" HorizontalAlignment="Left" IsReadOnly="True" />
+                </Grid>
+            </GroupBox>
+            <TextBox x:Name="SearchTextBox" Width="300" Height="30" TextChanged="SearchTextBox_TextChanged"/>
+            <StackPanel Height="40" Orientation="Horizontal" Width="799">
+                <Button x:Name="submit" Content="submit" Height="30" Width="84" Margin="10,0,20,0" Click="ButtonSumbit_Click"/>
+                <Button x:Name="Cancel" Content="Cancel" Height="30" Width="77" Click="ButtonCancel_Click"/>
+            </StackPanel>
+            <StackPanel Height="278" Width="736">
+                <DataGrid x:Name="grdProduct" AutoGenerateColumns="False" ItemsSource="{Binding UserHave}" Height="169" CanUserAddRows="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="your Wanted ID" Binding="{Binding ProductUserHaveId}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Wanted Product ID" Binding="{Binding ProductId}" Visibility="Visible" IsReadOnly="True" />
+                        <DataGridTextColumn Header="Wanted Product Name" Binding="{Binding Product.Name}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Description" Binding="{Binding Description}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Note" Binding="{Binding Note}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Price" Binding="{Binding Price}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Wanted Quantity" Binding="{Binding Quantity}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Total Quantity" Binding="{Binding Product.Quantity}" Width="150" />
+                        <DataGridTextColumn Header="GapPrice" Binding="{Binding GapPrice}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Fax" Binding="{Binding Fax}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Create Date" Binding="{Binding CreateDate}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Currency" Binding="{Binding Currency}" Width="150"  IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="150"  IsReadOnly="True"/>
+
+                        <DataGridTemplateColumn Header="option"  Width="100">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Select" x:Name="ButtonSelect" CommandParameter="{Binding ProductUserHaveId}" Click="ButtonSelect_Click"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+
+</Window>

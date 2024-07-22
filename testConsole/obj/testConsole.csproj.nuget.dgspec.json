@@ -1,0 +1,277 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\testConsole\\testConsole.csproj": {}
+  },
+  "projects": {
+    "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Business\\Exchange.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Business\\Exchange.Business.csproj",
+        "projectName": "Exchange.Business",
+        "projectPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Business\\Exchange.Business.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Lenovo\\.nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Common\\Exchange.Common.csproj": {
+                "projectPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Common\\Exchange.Common.csproj"
+              },
+              "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Data\\Exchange.Data.csproj": {
+                "projectPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Data\\Exchange.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Common\\Exchange.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Common\\Exchange.Common.csproj",
+        "projectName": "Exchange.Common",
+        "projectPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Common\\Exchange.Common.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Lenovo\\.nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Data\\Exchange.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Data\\Exchange.Data.csproj",
+        "projectName": "Exchange.Data",
+        "projectPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Data\\Exchange.Data.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Lenovo\\.nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\testConsole\\testConsole.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\testConsole\\testConsole.csproj",
+        "projectName": "testConsole",
+        "projectPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\testConsole\\testConsole.csproj",
+        "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
+        "outputPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\testConsole\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Users\\Lenovo\\.nuget\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Business\\Exchange.Business.csproj": {
+                "projectPath": "D:\\FPT_source\\sem5\\PRN212\\Net1810_212_1_Exchange\\Source\\Net1810_212_1_Exchange\\Exchange.Business\\Exchange.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

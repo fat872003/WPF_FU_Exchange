@@ -1,0 +1,146 @@
+﻿<Window x:Class="Exchange.WpfApp.UI.wOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exchange.WpfApp.UI"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+
+        mc:Ignorable="d"
+        Title="wOrder" Height="750" Width="1300" Loaded="Window_Loaded">
+    <Grid>
+
+
+        <StackPanel Orientation="Vertical" RenderTransformOrigin="0.5,0.519">
+            <GroupBox
+                materialDesign:ColorZoneAssist.Background="Black"
+                materialDesign:ColorZoneAssist.Foreground="White"
+                materialDesign:ColorZoneAssist.Mode="Custom"
+                Header="My Oder Information" Margin="35" Height="335" Width="1216">
+                <Grid Height="250" Margin="0,17,0,16" Width="1067">
+                    <!-- Increased height to accommodate new row -->
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <!-- New row definition -->
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="125"/>
+                        <ColumnDefinition Width="89.4"/>
+                        <ColumnDefinition Width="110.6"/>
+                        <ColumnDefinition Width="Auto" MinWidth="115"/>
+                        <ColumnDefinition Width="171"/>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="200"/>
+                        <ColumnDefinition Width="75"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- First Row -->
+                    <Label Grid.Column="0" Grid.Row="0" Content="OrderID" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="111" />
+                    <TextBox Grid.Column="1" Grid.Row="0" x:Name="txt_orderID" Margin="5,0,0,12" Width="180" HorizontalAlignment="Left" IsReadOnly="True" Grid.ColumnSpan="2"/>
+                    <Label Grid.Column="3" Grid.Row="0" Content="Order Detail ID" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="105"/>
+                    <TextBox Grid.Row="0" Grid.Column="4" x:Name="txt_orderDetailID" Margin="5,0,10,12" IsReadOnly="True" />
+                    <Label Grid.Column="5" Grid.Row="0" Content="Order date" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="130"/>
+                    <TextBox Grid.Column="6" Grid.Row="0" x:Name="txt_orderDate" Margin="5,0,10,12" Height="38" VerticalAlignment="Bottom" IsReadOnly="True" />
+
+                    <!-- Second Row -->
+                    <Label Grid.Row="1" Content="Complete Date" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="125"/>
+                    <TextBox x:Name="txt_completeDate" Grid.Column="1" Grid.Row="1" Margin="5,0,0,12" Width="180" HorizontalAlignment="Left" IsReadOnly="True" Grid.ColumnSpan="2"/>
+                    <Label Grid.Column="3" Grid.Row="1" Content="Total Discount" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="105"/>
+                    <TextBox Grid.Row="1" Grid.Column="4" x:Name="txt_totalDiscount" Margin="5,0,10,12" IsReadOnly="True" />
+                    <Label Grid.Column="5" Grid.Row="1" Content="Total Quantity" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="130"/>
+                    <TextBox Grid.Column="6" Grid.Row="1" x:Name="txt_totalOrderQuantity" Margin="5,0,10,12" IsReadOnly="True" />
+
+                    <!-- Third Row -->
+                    <Label x:Name="txtStatus" Grid.Column="0" Grid.Row="2" Content="Description" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="111"/>
+                    <TextBox Grid.Column="1" Grid.Row="2" x:Name="txt_Des" Margin="5,0,0,12" Width="180" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
+                    <Label Grid.Column="3" Grid.Row="2" Content="Order Status" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="114"/>
+                    <TextBox Grid.Row="2" Grid.Column="4" x:Name="OrderStatus" Margin="5,0,10,12" />
+                    <Label Grid.Column="5" Grid.Row="1" Content="Note" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="132" Margin="0,46,0,4" Grid.RowSpan="2"/>
+                    <TextBox Grid.Row="2" Grid.Column="6" x:Name="txt_note" Margin="5,0,10,12" />
+
+                    <!-- Fourth Row -->
+                    <Label x:Name="UserHaveStatus" Grid.Column="0" Grid.Row="3" Content="Trad status" HorizontalAlignment="Left" VerticalContentAlignment="Center" Width="111"/>
+                    <TextBox Grid.Column="1" Grid.Row="3" x:Name="txtUserHaveStatus" IsReadOnly="True" Margin="5,0,0,12" Width="180" HorizontalAlignment="Left" Grid.ColumnSpan="2"/>
+                    <Label Grid.Column="3" Grid.Row="3" Content="Wanted status" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="105"/>
+                    <TextBox Grid.Row="3" Grid.Column="4" x:Name="txtUserWantStatus" Margin="5,0,10,12" IsReadOnly="True" />
+                    <Label Grid.Column="5" Grid.Row="3" Content="Order type" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="130"/>
+                    <ComboBox Grid.Column="6" Grid.Row="3" x:Name="txtOrderType" Margin="5,13,10,12" DisplayMemberPath="OrderTypeName"   SelectedItem="{Binding SelectedOrderType, Mode=TwoWay}" />
+                  
+
+                    <!-- Fifth Row (New Row) -->
+                    <Label x:Name="Customer_Order" Grid.Row="4" Content="Ordered customer" HorizontalAlignment="Center" VerticalContentAlignment="Center" Width="125"/>
+                    <TextBox Grid.Column="1" Grid.Row="4" x:Name="txtCustommerOrder" Margin="5,0,0,12" Width="180" HorizontalAlignment="Left" Grid.ColumnSpan="2" IsReadOnly="True" />
+                </Grid>
+
+
+            </GroupBox>
+            <TextBox x:Name="SearchTextBox" materialDesign:HintAssist.Hint="Type here to search..." TextWrapping="Wrap" Width="241" TextChanged="TextBox_TextChanged"/>
+            <StackPanel Height="40" Orientation="Horizontal" HorizontalAlignment="Right" Width="368">
+                <Button x:Name="ButtonUpdate" Background="Black" Content="Update" Height="35" Width="80" Click="ButtonUpdate_Click" Margin="0,0,20,0"/>
+                <Button x:Name="ButtonCancel" Background="White" Foreground="DimGray" BorderBrush="Black" Content="Cancel" Height="35" Width="80" Click="ButtonCancel_Click" Margin="0,0,30,0"/>
+            </StackPanel>
+            <ScrollViewer HorizontalScrollBarVisibility="Auto"  VerticalScrollBarVisibility="Auto" Margin="0,10,0,5" Height="225" Width="1208">
+                <DataGrid x:Name="grdOrderView" AutoGenerateColumns="False" CanUserAddRows="False"  ItemsSource="{Binding OrderDetail}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Order ID" Binding="{Binding OrderId}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Order detail ID" Binding="{Binding OrderDetailId}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Order Date" Binding="{Binding Order.OrderDate}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Complete Date" Binding="{Binding Order.CompleDate}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Total Quantity" Binding="{Binding Order.TotalOrderQuantity}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Order Description" Binding="{Binding Order.Description}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="UserHaveStatus" Binding="{Binding Order.UserHaveStatus}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="UserWantStatus" Binding="{Binding Order.UserWantStatus}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Note" Binding="{Binding Order.Note}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Order Type" Binding="{Binding Order.OrderType.OrderTypeName}" Visibility="Visible" IsReadOnly="True"/>
+
+                        <DataGridTextColumn Header="Total Discount" Binding="{Binding Order.TotalDiscount}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Total Price" Binding="{Binding Order.TotalPrice}" Visibility="Visible" IsReadOnly="True"/>
+                        <DataGridTextColumn Header="Order Status" Binding="{Binding Status}" Visibility="Visible" IsReadOnly="True"/>
+
+                        <DataGridTemplateColumn Header="" Width="120">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Select" CommandParameter="{Binding OrderDetailId}" Click="btn_SelectDtg"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+
+                        <!-- Column for Delete button -->
+                        <DataGridTemplateColumn Header="" Width="120">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Delete" Background="DarkRed" Foreground="White" CommandParameter="{Binding OrderDetailId}" Click="btn_DeleteDtg"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="" Width="130">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Accept" Background="#4CAF50" Foreground="White" CommandParameter="{Binding OrderDetailId}" Click="btn_AcceptDtg"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="" Width="130">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="denied" Background="Gray" Foreground="White" CommandParameter="{Binding OrderDetailId}" Click="btn_DeniedDtg"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Header="More" Width="130">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Detail" Background="White" Foreground="Black" CommandParameter="{Binding OrderDetailId}" Click="btn_DetailDtg"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+        </StackPanel>
+    </Grid>
+</Window>

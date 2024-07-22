@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="d.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="da.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SmallUI\SelectUserHave.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SmallUI\SelectUserWant.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SmallUI\wOrderInformation.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\wOrder.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\wUserWant.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UI\wWishList.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="welcome.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="d.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="da.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ResourceXAML\MainResource.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SmallUI\SelectUserHave.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SmallUI\SelectUserWant.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SmallUI\wOrderInformation.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\wOrder.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\wUserWant.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UI\wWishList.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="welcome.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

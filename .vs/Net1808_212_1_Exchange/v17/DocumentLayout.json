@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC80756-2367-4049-BAF0-3FB74D902254}|Net1810_212_1_Exchange_Rebuid\\Exchange.WpfApp.csproj|d:\\fpt_source\\sem5\\prn212\\project\\source\\net1804_212_prj_1_exchange\\source\\net1810_212_1_exchange\\net1810_212_1_exchange_rebuid\\smallui\\selectuserhave.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EDC80756-2367-4049-BAF0-3FB74D902254}|Net1810_212_1_Exchange_Rebuid\\Exchange.WpfApp.csproj|solutionrelative:net1810_212_1_exchange_rebuid\\smallui\\selectuserhave.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC80756-2367-4049-BAF0-3FB74D902254}|Net1810_212_1_Exchange_Rebuid\\Exchange.WpfApp.csproj|d:\\fpt_source\\sem5\\prn212\\project\\source\\net1804_212_prj_1_exchange\\source\\net1810_212_1_exchange\\net1810_212_1_exchange_rebuid\\smallui\\selectuserhave.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDC80756-2367-4049-BAF0-3FB74D902254}|Net1810_212_1_Exchange_Rebuid\\Exchange.WpfApp.csproj|solutionrelative:net1810_212_1_exchange_rebuid\\smallui\\selectuserhave.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC80756-2367-4049-BAF0-3FB74D902254}|Net1810_212_1_Exchange_Rebuid\\Exchange.WpfApp.csproj|d:\\fpt_source\\sem5\\prn212\\project\\source\\net1804_212_prj_1_exchange\\source\\net1810_212_1_exchange\\net1810_212_1_exchange_rebuid\\smallui\\selectuserwant.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDC80756-2367-4049-BAF0-3FB74D902254}|Net1810_212_1_Exchange_Rebuid\\Exchange.WpfApp.csproj|solutionrelative:net1810_212_1_exchange_rebuid\\smallui\\selectuserwant.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDC80756-2367-4049-BAF0-3FB74D902254}|Net1810_212_1_Exchange_Rebuid\\Exchange.WpfApp.csproj|d:\\fpt_source\\sem5\\prn212\\project\\source\\net1804_212_prj_1_exchange\\source\\net1810_212_1_exchange\\net1810_212_1_exchange_rebuid\\smallui\\selectuserwant.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{EDC80756-2367-4049-BAF0-3FB74D902254}|Net1810_212_1_Exchange_Rebuid\\Exchange.WpfApp.csproj|solutionrelative:net1810_212_1_exchange_rebuid\\smallui\\selectuserwant.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 219,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SelectUserHave.xaml",
+              "DocumentMoniker": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserHave.xaml",
+              "RelativeDocumentMoniker": "Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserHave.xaml",
+              "ToolTip": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserHave.xaml",
+              "RelativeToolTip": "Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserHave.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-20T04:27:34.109Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SelectUserHave.xaml.cs",
+              "DocumentMoniker": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserHave.xaml.cs",
+              "RelativeDocumentMoniker": "Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserHave.xaml.cs",
+              "ToolTip": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserHave.xaml.cs",
+              "RelativeToolTip": "Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserHave.xaml.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAYwEAAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T04:46:57.987Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SelectUserWant.xaml",
+              "DocumentMoniker": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserWant.xaml",
+              "RelativeDocumentMoniker": "Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserWant.xaml",
+              "ToolTip": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserWant.xaml",
+              "RelativeToolTip": "Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserWant.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-20T04:46:38.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SelectUserWant.xaml.cs",
+              "DocumentMoniker": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserWant.xaml.cs",
+              "RelativeDocumentMoniker": "Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserWant.xaml.cs",
+              "ToolTip": "D:\\FPT_source\\sem5\\PRN212\\Project\\Source\\Net1804_212_PRJ_1_Exchange\\source\\Net1810_212_1_Exchange\\Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserWant.xaml.cs",
+              "RelativeToolTip": "Net1810_212_1_Exchange_Rebuid\\SmallUI\\SelectUserWant.xaml.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-20T04:46:37.696Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 11,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
